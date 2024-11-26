@@ -1,0 +1,81 @@
+server:
+  port: 8080
+
+spring:
+  # Database Configuration
+  datasource:
+    url: jdbc:h2:mem:bankingdb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  
+  # JPA Configuration
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+  
+  # H2 Console
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: true
+  
+  # Gateway Configuration
+#  cloud:
+#    gateway:
+#      server:
+#        port: 8084
+#      routes:
+#        - id: banking_service
+#          uri: http://localhost:8080
+#          predicates:
+#            - Path=/api/**
+
+# Keycloak Configuration
+keycloak:
+  auth-server-url: http://localhost:8085/auth
+  realm: banking
+  resource: banking-client
+  public-client: true
+  principal-attribute: preferred_username
+
+# Drools Configuration
+kie:
+  server:
+    port: 8083
+    id: banking-kie-server
+    location: http://localhost:${kie.server.port}/kie-server/services/rest/server
+
+# Camunda Configuration
+camunda:
+  bpm:
+    admin-user:
+      id: demo
+      password: demo
+    webapp:
+      port: 8082
+    database:
+      schema-update: true
+    application:
+      deploy-changed-only: true
+    job-execution:
+      enabled: true
+
+# Logging Configuration (opzionale ma utile)
+logging:
+  level:
+    root: INFO
+    org.springframework.cloud.gateway: DEBUG
+    org.camunda.bpm: INFO
+    org.kie: INFO
+    org.keycloak: INFO
+
+# Riepilogo indirizzi console
+# H2 Database:     http://localhost:8081/h2-console
+# Camunda:         http://localhost:8082/camunda/app/
+# Drools/KIE:      http://localhost:8083/kie-workbench
+# Gateway:         http://localhost:8084
+# Keycloak:        http://localhost:8085/auth
