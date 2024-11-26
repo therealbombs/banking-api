@@ -16,15 +16,21 @@ import com.ox.banking.dto.BalanceDTO;
 import com.ox.banking.dto.TransactionDTO;
 import com.ox.banking.service.AccountService;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j 
 @RestController
 @RequestMapping("/api/accounts")
 public class AccountController {
     
+	
     @Autowired
     private AccountService accountService;
     
     @GetMapping("/{accountNumber}/balance")
     public ResponseEntity<BalanceDTO> getBalance(@PathVariable String accountNumber) {
+    	log.debug("Retrieving balance for account: {}", ""+accountNumber);
+    	
         return ResponseEntity.ok(accountService.getBalance(accountNumber));
     }
     

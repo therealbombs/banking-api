@@ -1,0 +1,371 @@
+2024-11-26 15:18:04.624 [main] INFO  com.ox.banking.BankingApplication - Starting BankingApplication using Java 23.0.1 with PID 13052 (C:\Users\A49C\eclipse-workspace\ox\banking-api\target\classes started by A49C in C:\Users\A49C\eclipse-workspace\ox\banking-api)
+2024-11-26 15:18:04.627 [main] DEBUG com.ox.banking.BankingApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2024-11-26 15:18:04.628 [main] INFO  com.ox.banking.BankingApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 15:18:06.152 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 15:18:06.276 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 5 JPA repository interfaces.
+2024-11-26 15:18:07.207 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-26 15:18:07.219 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-26 15:18:07.223 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-26 15:18:07.225 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-11-26 15:18:07.404 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-26 15:18:07.407 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2687 ms
+2024-11-26 15:18:07.472 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-26 15:18:07.768 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bankingdb user=SA
+2024-11-26 15:18:07.771 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-26 15:18:07.791 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bankingdb'
+2024-11-26 15:18:07.971 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26 15:18:08.118 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-11-26 15:18:08.191 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-26 15:18:08.615 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 15:18:08.694 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-26 15:18:10.317 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26 15:18:10.423 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 15:18:11.262 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 15:18:11.313 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 875dc8ce-bb2e-4905-831f-f245d838d6c5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-26 15:18:11.685 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1dc987b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4f09d998, org.springframework.security.web.context.SecurityContextHolderFilter@419c70f6, org.springframework.security.web.header.HeaderWriterFilter@715523b8, org.springframework.web.filter.CorsFilter@cbd3871, org.springframework.security.web.authentication.logout.LogoutFilter@17d25e1d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a2f1ae3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48b1b469, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66694050, org.springframework.security.web.access.ExceptionTranslationFilter@a1be5cb, org.springframework.security.web.access.intercept.AuthorizationFilter@344f4a82]
+2024-11-26 15:18:12.024 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2024-11-26 15:18:12.118 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, CreateAdminUserConfiguration[adminUser=AdminUserProperty[id=demo, firstName=Demo, lastName=Demo, email=demo@localhost, password=******]], failedJobConfiguration, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin]' activated on process engine 'default'
+2024-11-26 15:18:13.389 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB021 Auto-Deploying resources: []
+2024-11-26 15:18:13.396 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2024-11-26 15:18:13.396 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
+2024-11-26 15:18:13.396 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
+2024-11-26 15:18:13.396 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-009: Listeners will not be invoked if a skipCustomListeners API parameter is set to true by user.
+2024-11-26 15:18:13.410 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
+2024-11-26 15:18:13.805 [main] INFO  org.camunda.feel.FeelEngine - Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@1d0fae45)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@5b7600ec, clock: SystemClock, configuration: Configuration(false)]
+2024-11-26 15:18:16.824 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2024-11-26 15:18:16.829 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'soap-http-connector' and class 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl': 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl'
+2024-11-26 15:18:17.176 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+2024-11-26 15:18:17.250 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+2024-11-26 15:18:17.266 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+2024-11-26 15:18:17.291 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+2024-11-26 15:18:17.301 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+2024-11-26 15:18:17.308 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+2024-11-26 15:18:17.314 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+2024-11-26 15:18:17.369 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03067 No history level property found in database
+2024-11-26 15:18:17.375 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+2024-11-26 15:18:17.412 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+2024-11-26 15:18:17.687 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB010 Creating initial Admin User: AdminUserProperty[id=demo, firstName=Demo, lastName=Demo, email=demo@localhost, password=******]
+2024-11-26 15:18:17.898 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-26 15:18:17.942 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-11-26 15:18:17.959 [main] INFO  com.ox.banking.BankingApplication - Started BankingApplication in 14.607 seconds (process running for 15.286)
+2024-11-26 15:18:17.964 [main] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2024-11-26 15:18:17.967 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2024-11-26 15:18:34.401 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26 15:18:34.401 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-26 15:18:34.402 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-11-26 15:18:34.420 [http-nio-8080-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/accounts/666/balance' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-11-26 15:18:34.471 [http-nio-8080-exec-1] DEBUG c.o.b.controller.AccountController - Retrieving balance for account: 666
+2024-11-26 15:27:25.433 [main] INFO  com.ox.banking.BankingApplication - Starting BankingApplication using Java 23.0.1 with PID 23760 (C:\Users\A49C\eclipse-workspace\ox\banking-api\target\classes started by A49C in C:\Users\A49C\eclipse-workspace\ox\banking-api)
+2024-11-26 15:27:25.437 [main] DEBUG com.ox.banking.BankingApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2024-11-26 15:27:25.437 [main] INFO  com.ox.banking.BankingApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 15:27:26.641 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 15:27:26.727 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 74 ms. Found 5 JPA repository interfaces.
+2024-11-26 15:27:27.577 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-26 15:27:27.589 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-26 15:27:27.594 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-26 15:27:27.594 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-11-26 15:27:27.716 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-26 15:27:27.718 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2211 ms
+2024-11-26 15:27:27.776 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-26 15:27:28.055 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bankingdb user=SA
+2024-11-26 15:27:28.061 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-26 15:27:28.087 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bankingdb'
+2024-11-26 15:27:28.345 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26 15:27:28.420 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-11-26 15:27:28.469 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-26 15:27:28.774 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 15:27:28.865 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-26 15:27:30.600 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26 15:27:30.737 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 15:27:31.706 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 15:27:31.780 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'swaggerWebMvcConfigurer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'swaggerWebMvcConfigurer' parameter 1: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3: No qualifying bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-11-26 15:27:31.782 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 15:27:31.789 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-26 15:27:31.796 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-26 15:27:31.801 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-11-26 15:27:31.848 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-26 15:27:31.908 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of method indexPageTransformer in org.springdoc.webmvc.ui.SwaggerConfig required a bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=false)
+
+
+Action:
+
+Consider defining a bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' in your configuration.
+
+2024-11-26 15:31:42.449 [main] INFO  com.ox.banking.BankingApplication - Starting BankingApplication using Java 23.0.1 with PID 24836 (C:\Users\A49C\eclipse-workspace\ox\banking-api\target\classes started by A49C in C:\Users\A49C\eclipse-workspace\ox\banking-api)
+2024-11-26 15:31:42.452 [main] DEBUG com.ox.banking.BankingApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2024-11-26 15:31:42.453 [main] INFO  com.ox.banking.BankingApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 15:31:43.667 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 15:31:43.788 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 104 ms. Found 5 JPA repository interfaces.
+2024-11-26 15:31:44.505 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-26 15:31:44.515 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-26 15:31:44.519 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-26 15:31:44.520 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-11-26 15:31:44.670 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-26 15:31:44.672 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2155 ms
+2024-11-26 15:31:44.730 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-26 15:31:44.933 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bankingdb user=SA
+2024-11-26 15:31:44.936 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-26 15:31:44.949 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bankingdb'
+2024-11-26 15:31:45.100 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26 15:31:45.163 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-11-26 15:31:45.208 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-26 15:31:45.508 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 15:31:45.573 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-26 15:31:46.755 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26 15:31:46.866 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 15:31:47.533 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 15:31:47.561 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'swaggerWebMvcConfigurer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'swaggerWebMvcConfigurer' parameter 1: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3: No qualifying bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-11-26 15:31:47.562 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 15:31:47.564 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-26 15:31:47.567 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-26 15:31:47.568 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-11-26 15:31:47.582 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-26 15:31:47.608 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of method indexPageTransformer in org.springdoc.webmvc.ui.SwaggerConfig required a bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=false)
+
+
+Action:
+
+Consider defining a bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' in your configuration.
+
+2024-11-26 15:33:17.542 [main] INFO  com.ox.banking.BankingApplication - Starting BankingApplication using Java 23.0.1 with PID 14968 (C:\Users\A49C\eclipse-workspace\ox\banking-api\target\classes started by A49C in C:\Users\A49C\eclipse-workspace\ox\banking-api)
+2024-11-26 15:33:17.544 [main] DEBUG com.ox.banking.BankingApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2024-11-26 15:33:17.545 [main] INFO  com.ox.banking.BankingApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 15:33:18.517 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 15:33:18.590 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 5 JPA repository interfaces.
+2024-11-26 15:33:19.212 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-26 15:33:19.220 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-26 15:33:19.224 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-26 15:33:19.224 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-11-26 15:33:19.313 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-26 15:33:19.314 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1707 ms
+2024-11-26 15:33:19.348 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-26 15:33:19.545 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bankingdb user=SA
+2024-11-26 15:33:19.547 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-26 15:33:19.561 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bankingdb'
+2024-11-26 15:33:19.709 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26 15:33:19.766 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-11-26 15:33:19.802 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-26 15:33:20.031 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 15:33:20.079 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-26 15:33:21.131 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26 15:33:21.219 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 15:33:21.863 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 15:33:21.908 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'swaggerWebMvcConfigurer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'swaggerWebMvcConfigurer' parameter 1: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3: No qualifying bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-11-26 15:33:21.909 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 15:33:21.912 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-26 15:33:21.953 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-26 15:33:21.955 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-11-26 15:33:21.968 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-26 15:33:21.997 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of method indexPageTransformer in org.springdoc.webmvc.ui.SwaggerConfig required a bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=false)
+
+
+Action:
+
+Consider defining a bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' in your configuration.
+
+2024-11-26 15:35:52.808 [main] INFO  com.ox.banking.BankingApplication - Starting BankingApplication using Java 23.0.1 with PID 17624 (C:\Users\A49C\eclipse-workspace\ox\banking-api\target\classes started by A49C in C:\Users\A49C\eclipse-workspace\ox\banking-api)
+2024-11-26 15:35:52.811 [main] DEBUG com.ox.banking.BankingApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2024-11-26 15:35:52.813 [main] INFO  com.ox.banking.BankingApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 15:35:54.150 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 15:35:54.273 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 113 ms. Found 5 JPA repository interfaces.
+2024-11-26 15:35:55.257 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-26 15:35:55.265 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-26 15:35:55.268 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-26 15:35:55.268 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-11-26 15:35:55.426 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-26 15:35:55.428 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2528 ms
+2024-11-26 15:35:55.497 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-26 15:35:55.771 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bankingdb user=SA
+2024-11-26 15:35:55.773 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-26 15:35:55.788 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bankingdb'
+2024-11-26 15:35:56.012 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26 15:35:56.120 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-11-26 15:35:56.177 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-26 15:35:56.434 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 15:35:56.483 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-26 15:35:57.685 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26 15:35:57.770 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 15:35:58.375 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 15:35:58.399 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'swaggerWebMvcConfigurer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'swaggerWebMvcConfigurer' parameter 1: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3: No qualifying bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-11-26 15:35:58.399 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 15:35:58.403 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-26 15:35:58.406 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-26 15:35:58.407 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-11-26 15:35:58.421 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-26 15:35:58.446 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of method indexPageTransformer in org.springdoc.webmvc.ui.SwaggerConfig required a bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=false)
+
+
+Action:
+
+Consider defining a bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' in your configuration.
+
+2024-11-26 15:37:41.541 [main] INFO  com.ox.banking.BankingApplication - Starting BankingApplication using Java 23.0.1 with PID 18240 (C:\Users\A49C\eclipse-workspace\ox\banking-api\target\classes started by A49C in C:\Users\A49C\eclipse-workspace\ox\banking-api)
+2024-11-26 15:37:41.543 [main] DEBUG com.ox.banking.BankingApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2024-11-26 15:37:41.544 [main] INFO  com.ox.banking.BankingApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 15:37:42.540 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 15:37:42.649 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 96 ms. Found 5 JPA repository interfaces.
+2024-11-26 15:37:43.358 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-26 15:37:43.367 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-26 15:37:43.370 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-26 15:37:43.370 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-11-26 15:37:43.478 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-26 15:37:43.479 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1867 ms
+2024-11-26 15:37:43.514 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-26 15:37:43.714 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bankingdb user=SA
+2024-11-26 15:37:43.716 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-26 15:37:43.732 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bankingdb'
+2024-11-26 15:37:43.880 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26 15:37:43.969 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-11-26 15:37:44.018 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-26 15:37:44.258 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 15:37:44.304 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-26 15:37:45.581 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26 15:37:45.662 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 15:37:46.376 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 15:37:46.398 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration': Unsatisfied dependency expressed through method 'setContentNegotiationStrategy' parameter 0: Error creating bean with name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration': Unsatisfied dependency expressed through method 'setConfigurers' parameter 0: Error creating bean with name 'swaggerWebMvcConfigurer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'swaggerWebMvcConfigurer' parameter 1: Error creating bean with name 'indexPageTransformer' defined in class path resource [org/springdoc/webmvc/ui/SwaggerConfig.class]: Unsatisfied dependency expressed through method 'indexPageTransformer' parameter 3: No qualifying bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-11-26 15:37:46.399 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 15:37:46.402 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-26 15:37:46.405 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-26 15:37:46.407 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-11-26 15:37:46.421 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-26 15:37:46.445 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 3 of method indexPageTransformer in org.springdoc.webmvc.ui.SwaggerConfig required a bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=false)
+
+
+Action:
+
+Consider defining a bean of type 'org.springdoc.webmvc.ui.SwaggerWelcomeCommon' in your configuration.
+
+2024-11-26 15:38:22.433 [main] INFO  com.ox.banking.BankingApplication - Starting BankingApplication using Java 23.0.1 with PID 3348 (C:\Users\A49C\eclipse-workspace\ox\banking-api\target\classes started by A49C in C:\Users\A49C\eclipse-workspace\ox\banking-api)
+2024-11-26 15:38:22.436 [main] DEBUG com.ox.banking.BankingApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2024-11-26 15:38:22.436 [main] INFO  com.ox.banking.BankingApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-26 15:38:24.099 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-26 15:38:24.183 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 5 JPA repository interfaces.
+2024-11-26 15:38:25.036 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-26 15:38:25.050 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-26 15:38:25.053 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-26 15:38:25.053 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-11-26 15:38:25.160 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-26 15:38:25.162 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2664 ms
+2024-11-26 15:38:25.202 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-26 15:38:25.472 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bankingdb user=SA
+2024-11-26 15:38:25.474 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-26 15:38:25.493 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bankingdb'
+2024-11-26 15:38:25.684 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-26 15:38:25.760 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-11-26 15:38:25.834 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-26 15:38:26.147 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-26 15:38:26.202 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-26 15:38:27.419 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-26 15:38:27.508 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-26 15:38:28.243 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-26 15:38:28.371 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: dcafa2c0-8df0-42cc-ac35-96b809c14ec0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-26 15:38:28.697 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a4c1a6c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@123a21ad, org.springframework.security.web.context.SecurityContextHolderFilter@17adbecf, org.springframework.security.web.header.HeaderWriterFilter@146b4c6c, org.springframework.web.filter.CorsFilter@51179fad, org.springframework.security.web.authentication.logout.LogoutFilter@2a8081f5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31b4c003, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74214ac3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2afa1b1a, org.springframework.security.web.access.ExceptionTranslationFilter@3304362e, org.springframework.security.web.access.intercept.AuthorizationFilter@354baab2]
+2024-11-26 15:38:29.417 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2024-11-26 15:38:29.663 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, CreateAdminUserConfiguration[adminUser=AdminUserProperty[id=demo, firstName=Demo, lastName=Demo, email=demo@localhost, password=******]], failedJobConfiguration, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin]' activated on process engine 'default'
+2024-11-26 15:38:33.408 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB021 Auto-Deploying resources: []
+2024-11-26 15:38:33.418 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2024-11-26 15:38:33.418 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
+2024-11-26 15:38:33.419 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
+2024-11-26 15:38:33.419 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-009: Listeners will not be invoked if a skipCustomListeners API parameter is set to true by user.
+2024-11-26 15:38:33.444 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
+2024-11-26 15:38:34.034 [main] INFO  org.camunda.feel.FeelEngine - Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@6d7c8a2)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@5a85f41b, clock: SystemClock, configuration: Configuration(false)]
+2024-11-26 15:38:40.991 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2024-11-26 15:38:40.999 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'soap-http-connector' and class 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl': 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl'
+2024-11-26 15:38:41.332 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+2024-11-26 15:38:41.416 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+2024-11-26 15:38:41.435 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+2024-11-26 15:38:41.463 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+2024-11-26 15:38:41.468 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+2024-11-26 15:38:41.490 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+2024-11-26 15:38:41.499 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+2024-11-26 15:38:41.575 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03067 No history level property found in database
+2024-11-26 15:38:41.585 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+2024-11-26 15:38:41.640 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+2024-11-26 15:38:41.985 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB010 Creating initial Admin User: AdminUserProperty[id=demo, firstName=Demo, lastName=Demo, email=demo@localhost, password=******]
+2024-11-26 15:38:42.433 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-26 15:38:42.513 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-11-26 15:38:42.539 [main] INFO  com.ox.banking.BankingApplication - Started BankingApplication in 21.075 seconds (process running for 21.748)
+2024-11-26 15:38:42.546 [main] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2024-11-26 15:38:42.552 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2024-11-26 15:40:35.151 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-26 15:40:35.151 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-26 15:40:35.154 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2024-11-26 15:40:35.183 [http-nio-8080-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/accounts/666/balance' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-11-26 15:40:35.232 [http-nio-8080-exec-1] DEBUG c.o.b.controller.AccountController - Retrieving balance for account: 666
+2024-11-26 15:40:50.625 [http-nio-8080-exec-1] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 730 ms
+2024-11-26 21:04:27.886 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m39s983ms961µs100ns).

@@ -24,15 +24,15 @@ spring:
         web-allow-others: true
   
   # Gateway Configuration
-#  cloud:
-#    gateway:
-#      server:
-#        port: 8084
-#      routes:
-#        - id: banking_service
-#          uri: http://localhost:8080
-#          predicates:
-#            - Path=/api/**
+  cloud:
+    gateway:
+      server:
+        port: 8084
+      routes:
+        - id: banking_service
+          uri: http://localhost:8080
+          predicates:
+            - Path=/api/**
 
 # Keycloak Configuration
 keycloak:
@@ -73,16 +73,12 @@ logging:
     org.kie: INFO
     org.keycloak: INFO
 
-springdoc:
-  swagger-ui:
-    path: /swagger-ui.html
-    operations-sorter: method
-    enabled: true
 
+	  
 # Riepilogo indirizzi console
 # H2 Database:     http://localhost:8081/h2-console
 # Camunda:         http://localhost:8082/camunda/app/
 # Drools/KIE:      http://localhost:8083/kie-workbench
 # Gateway:         http://localhost:8084
 # Keycloak:        http://localhost:8085/auth
-# Swagger:         http://localhost:8086/swagger-ui.html
+  
