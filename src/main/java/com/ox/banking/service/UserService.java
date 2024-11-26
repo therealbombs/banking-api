@@ -17,6 +17,7 @@ public class UserService {
 				.orElseThrow(() -> new RuntimeException("User not found"));
 	}
 
+	
 	private UserProfileDTO convertToDTO(UserProfile profile) {
 		UserProfileDTO dto = new UserProfileDTO();
 		dto.setUserId(profile.getUserId());
