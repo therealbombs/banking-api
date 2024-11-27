@@ -18,7 +18,11 @@ public class CustomerService {
     
     public Customer authenticate(String username, String password) {
         // Per ora mock, poi integreremo con Keycloak
+    	
+//        return customerRepository.findByCustomerIdAndValidToIsNull(username)
+//            .orElseThrow(() -> new AuthenticationException("Invalid credentials") {});
+//        
         return customerRepository.findByCustomerIdAndValidToIsNull(username)
-            .orElseThrow(() -> new AuthenticationException("Invalid credentials") {});
+                .orElseThrow(() -> new AuthenticationException("Invalid credentials") {});
     }
 }

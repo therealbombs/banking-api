@@ -66,6 +66,7 @@ public class DataInitializer implements CommandLineRunner {
         customer.setLastName("Rossi");
         customer.setType(CustomerType.PREMIUM);
         customer.setPreferredLanguage(Language.IT);
+        customer.setValidTo(null);
         customerRepository.save(customer);
         
         Account account1 = new Account();
