@@ -1,16 +1,27 @@
 package com.ox.banking.entity;
 
+import com.ox.banking.entity.base.BaseHistoricalEntity;
 import jakarta.persistence.*;
 import lombok.Data;
-import java.math.BigDecimal;
+import lombok.EqualsAndHashCode;
 
 @Entity
 @Data
-public class Account {
+@EqualsAndHashCode(callSuper = true)
+@Table(name = "accounts")
+public class Account extends BaseHistoricalEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
     private String accountNumber;
-    private BigDecimal balance;
-    private String userId;
+    
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "customer_id")
+    private Customer customer;
+    
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "account_type_id")
+    private AccountType accountType;
+    
+    private String name;
+    private boolean primary;
+    private boolean active;
 }

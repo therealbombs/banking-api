@@ -1,16 +1,17 @@
 package com.ox.banking.enums;
-public enum UserProfileType {
-    RETAIL("Retail User"),
+
+public enum CustomerType {
+    RETAIL("Retail"),
     PRIVATE("Private Banking"),
     CORPORATE("Corporate"),
-    ADMIN("Administrator");
+    PREMIUM("Premium");
 
     private final String description;
-
-    UserProfileType(String description) {
+    
+    CustomerType(String description) {
         this.description = description;
     }
-
+    
     public String getDescription() {
         return description;
     }
