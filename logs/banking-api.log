@@ -27513,3 +27513,132 @@ This generated password is for development use only. Your security configuration
 2024-11-27 12:58:37.951 [main] INFO  com.ox.banking.BankingApplication - Started BankingApplication in 13.4 seconds (process running for 13.853)
 2024-11-27 12:58:37.954 [main] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
 2024-11-27 12:58:37.957 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2024-11-27 13:57:35.177 [main] INFO  com.ox.banking.BankingApplication - Starting BankingApplication using Java 23.0.1 with PID 19556 (C:\Users\A49C\eclipse-workspace\ox\banking-api\target\classes started by A49C in C:\Users\A49C\eclipse-workspace\ox\banking-api)
+2024-11-27 13:57:35.179 [main] DEBUG com.ox.banking.BankingApplication - Running with Spring Boot v3.2.0, Spring v6.1.1
+2024-11-27 13:57:35.181 [main] INFO  com.ox.banking.BankingApplication - No active profile set, falling back to 1 default profile: "default"
+2024-11-27 13:57:35.949 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 13:57:36.010 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 6 JPA repository interfaces.
+2024-11-27 13:57:36.553 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-27 13:57:36.564 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-11-27 13:57:36.568 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-27 13:57:36.568 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2024-11-27 13:57:36.657 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-27 13:57:36.658 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1426 ms
+2024-11-27 13:57:36.686 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-27 13:57:36.892 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bankingdb user=SA
+2024-11-27 13:57:36.895 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-27 13:57:36.905 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bankingdb'
+2024-11-27 13:57:37.039 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 13:57:37.126 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2024-11-27 13:57:37.179 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-27 13:57:37.591 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-27 13:57:37.718 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-27 13:57:39.337 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-27 13:57:39.446 [main] WARN  o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "create table accounts (account_number varchar(255) not null, active boolean, last_modified_by varchar(255), last_modified_date timestamp(6), valid_from timestamp(6), valid_to timestamp(6), name varchar(255), primary boolean not null, account_type_id bigint, customer_id varchar(255), primary key (account_number))" via JDBC [Syntax error in SQL statement "create table accounts (account_number varchar(255) not null, active boolean, last_modified_by varchar(255), last_modified_date timestamp(6), valid_from timestamp(6), valid_to timestamp(6), name varchar(255), primary [*]boolean not null, account_type_id bigint, customer_id varchar(255), primary key (account_number))"; expected "KEY";]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "create table accounts (account_number varchar(255) not null, active boolean, last_modified_by varchar(255), last_modified_date timestamp(6), valid_from timestamp(6), valid_to timestamp(6), name varchar(255), primary boolean not null, account_type_id bigint, customer_id varchar(255), primary key (account_number))" via JDBC [Syntax error in SQL statement "create table accounts (account_number varchar(255) not null, active boolean, last_modified_by varchar(255), last_modified_date timestamp(6), valid_from timestamp(6), valid_to timestamp(6), name varchar(255), primary [*]boolean not null, account_type_id bigint, customer_id varchar(255), primary key (account_number))"; expected "KEY";]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:574)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:514)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.createTable(AbstractSchemaMigrator.java:315)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:80)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:232)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:117)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:286)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:145)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:142)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:295)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1771)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1173)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:936)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:616)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:455)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:323)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1331)
+	at com.ox.banking.BankingApplication.main(BankingApplication.java:9)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table accounts (account_number varchar(255) not null, active boolean, last_modified_by varchar(255), last_modified_date timestamp(6), valid_from timestamp(6), valid_to timestamp(6), name varchar(255), primary [*]boolean not null, account_type_id bigint, customer_id varchar(255), primary key (account_number))"; expected "KEY"; SQL statement:
+create table accounts (account_number varchar(255) not null, active boolean, last_modified_by varchar(255), last_modified_date timestamp(6), valid_from timestamp(6), valid_to timestamp(6), name varchar(255), primary boolean not null, account_type_id bigint, customer_id varchar(255), primary key (account_number)) [42001-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at org.h2.command.ParserBase.getSyntaxError(ParserBase.java:750)
+	at org.h2.command.ParserBase.read(ParserBase.java:357)
+	at org.h2.command.Parser.parseTableConstraintIf(Parser.java:8727)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8989)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8939)
+	at org.h2.command.Parser.parseCreate(Parser.java:6404)
+	at org.h2.command.Parser.parsePrepared(Parser.java:666)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:569)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 38 common frames omitted
+2024-11-27 13:57:39.481 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 13:57:40.821 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 13:57:41.049 [main] WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 6dd8421a-4c20-42dc-8ce6-cc1e9388d1f0
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-27 13:57:41.505 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@37227aa7, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57e2d15c, org.springframework.security.web.context.SecurityContextHolderFilter@1c294a17, org.springframework.security.web.header.HeaderWriterFilter@7bf3bf2e, org.springframework.web.filter.CorsFilter@6810465, org.springframework.security.web.authentication.logout.LogoutFilter@4407f129, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@47a72c32, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@112f8f8f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@19e03398, org.springframework.security.web.access.ExceptionTranslationFilter@33602729, org.springframework.security.web.access.intercept.AuthorizationFilter@24489d12]
+2024-11-27 13:57:41.886 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB040 Setting up jobExecutor with corePoolSize=3, maxPoolSize:10
+2024-11-27 13:57:41.992 [main] INFO  org.camunda.bpm.engine.cfg - ENGINE-12003 Plugin 'CompositeProcessEnginePlugin[genericPropertiesConfiguration, camundaProcessEngineConfiguration, camundaDatasourceConfiguration, camundaJobConfiguration, camundaHistoryConfiguration, camundaMetricsConfiguration, camundaAuthorizationConfiguration, camundaDeploymentConfiguration, CreateAdminUserConfiguration[adminUser=AdminUserProperty[id=demo, firstName=Demo, lastName=Demo, email=demo@localhost, password=******]], failedJobConfiguration, eventPublisherPlugin, ApplicationContextClassloaderSwitchPlugin]' activated on process engine 'default'
+2024-11-27 13:57:43.758 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB021 Auto-Deploying resources: []
+2024-11-27 13:57:43.767 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-001: Initialized Camunda Spring Boot Eventing Engine Plugin.
+2024-11-27 13:57:43.767 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-003: Task events will be published as Spring Events.
+2024-11-27 13:57:43.767 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-005: Execution events will be published as Spring Events.
+2024-11-27 13:57:43.767 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-009: Listeners will not be invoked if a skipCustomListeners API parameter is set to true by user.
+2024-11-27 13:57:43.782 [main] INFO  o.c.b.s.b.s.e.EventPublisherPlugin - EVENTING-007: History events will be published as Spring events.
+2024-11-27 13:57:44.181 [main] INFO  org.camunda.feel.FeelEngine - Engine created. [value-mapper: CompositeValueMapper(List(org.camunda.feel.impl.JavaValueMapper@2c2c1790)), function-provider: org.camunda.bpm.dmn.feel.impl.scala.function.CustomFunctionTransformer@70721c2d, clock: SystemClock, configuration: Configuration(false)]
+2024-11-27 13:57:47.917 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'http-connector' and class 'org.camunda.connect.httpclient.impl.HttpConnectorImpl': 'org.camunda.connect.httpclient.impl.HttpConnectorProviderImpl'
+2024-11-27 13:57:47.921 [main] INFO  org.camunda.bpm.connect - CNCT-01004 Discovered provider for connector id 'soap-http-connector' and class 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorImpl': 'org.camunda.connect.httpclient.soap.impl.SoapHttpConnectorProviderImpl'
+2024-11-27 13:57:48.094 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.engine.sql'
+2024-11-27 13:57:48.122 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.history.sql'
+2024-11-27 13:57:48.130 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'identity' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.identity.sql'
+2024-11-27 13:57:48.142 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'case.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.engine.sql'
+2024-11-27 13:57:48.146 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'case.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.case.history.sql'
+2024-11-27 13:57:48.149 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'decision.engine' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.engine.sql'
+2024-11-27 13:57:48.153 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03016 Performing database operation 'create' on component 'decision.history' with resource 'org/camunda/bpm/engine/db/create/activiti.h2.create.decision.history.sql'
+2024-11-27 13:57:48.190 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03067 No history level property found in database
+2024-11-27 13:57:48.195 [main] INFO  org.camunda.bpm.engine.persistence - ENGINE-03065 Creating historyLevel property in database for level: HistoryLevelFull(name=full, id=3)
+2024-11-27 13:57:48.228 [main] INFO  org.camunda.bpm.engine - ENGINE-00001 Process Engine default created.
+2024-11-27 13:57:48.422 [main] INFO  org.camunda.bpm.spring.boot - STARTER-SB010 Creating initial Admin User: AdminUserProperty[id=demo, firstName=Demo, lastName=Demo, email=demo@localhost, password=******]
+2024-11-27 13:57:48.775 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-11-27 13:57:48.826 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2024-11-27 13:57:48.842 [main] INFO  com.ox.banking.BankingApplication - Started BankingApplication in 14.286 seconds (process running for 14.722)
+2024-11-27 13:57:48.848 [main] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14014 Starting up the JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor].
+2024-11-27 13:57:48.852 [JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor]] INFO  org.camunda.bpm.engine.jobexecutor - ENGINE-14018 JobExecutor[org.camunda.bpm.engine.spring.components.jobexecutor.SpringJobExecutor] starting to acquire jobs
+2024-11-27 13:58:25.528 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 13:58:25.528 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-11-27 13:58:25.530 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-11-27 13:58:25.546 [http-nio-8080-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/accounts/IT001122334455/balance' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2024-11-27 13:58:25.593 [http-nio-8080-exec-1] DEBUG c.o.b.controller.AccountController - Retrieving balance for account: IT001122334455
+2024-11-27 13:58:26.345 [http-nio-8080-exec-2] DEBUG c.o.b.controller.AccountController - Retrieving balance for account: IT001122334455
+2024-11-27 13:58:27.251 [http-nio-8080-exec-3] DEBUG c.o.b.controller.AccountController - Retrieving balance for account: IT001122334455
